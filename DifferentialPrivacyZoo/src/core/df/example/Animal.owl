@@ -1,0 +1,1868 @@
+Prefix: : <http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#>
+Prefix: dc: <http://purl.org/dc/elements/1.1/>
+Prefix: obda: <https://w3id.org/obda/vocabulary#>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: zoo: <http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#>
+
+
+
+Ontology: <http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology>
+
+
+Datatype: rdf:PlainLiteral
+
+    
+Datatype: xsd:int
+
+    
+Datatype: xsd:integer
+
+    
+Datatype: xsd:string
+
+    
+DataProperty: zoo:Name
+
+    Domain: 
+        zoo:Animal
+    
+    Range: 
+        xsd:string
+    
+    
+DataProperty: zoo:NumCarrots
+
+    Domain: 
+        zoo:Animal
+    
+    Range: 
+        xsd:integer
+    
+    
+Class: zoo:Animal
+
+    
+Individual: zoo:Aardvark
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Aardvark"^^xsd:string,
+     zoo:NumCarrots  1
+    
+    
+Individual: zoo:Albatross
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Albatross"^^xsd:string,
+     zoo:NumCarrots  88
+    
+    
+Individual: zoo:Alligator
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Alligator"^^xsd:string,
+     zoo:NumCarrots  35
+    
+    
+Individual: zoo:Alpaca
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Alpaca"^^xsd:string,
+     zoo:NumCarrots  99
+    
+    
+Individual: zoo:Ant
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Ant"^^xsd:string,
+     zoo:NumCarrots  69
+    
+    
+Individual: zoo:Anteater
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Anteater"^^xsd:string,
+     zoo:NumCarrots  14
+    
+    
+Individual: zoo:Antelope
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Antelope"^^xsd:string,
+     zoo:NumCarrots  77
+    
+    
+Individual: zoo:Ape
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Ape"^^xsd:string,
+     zoo:NumCarrots  53
+    
+    
+Individual: zoo:Armadillo
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Armadillo"^^xsd:string,
+     zoo:NumCarrots  94
+    
+    
+Individual: zoo:Baboon
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Baboon"^^xsd:string,
+     zoo:NumCarrots  67
+    
+    
+Individual: zoo:Badger
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Badger"^^xsd:string,
+     zoo:NumCarrots  92
+    
+    
+Individual: zoo:Barracuda
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Barracuda"^^xsd:string,
+     zoo:NumCarrots  87
+    
+    
+Individual: zoo:Bat
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Bat"^^xsd:string,
+     zoo:NumCarrots  70
+    
+    
+Individual: zoo:Bear
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Bear"^^xsd:string,
+     zoo:NumCarrots  31
+    
+    
+Individual: zoo:Beaver
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Beaver"^^xsd:string,
+     zoo:NumCarrots  14
+    
+    
+Individual: zoo:Bee
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Bee"^^xsd:string,
+     zoo:NumCarrots  14
+    
+    
+Individual: zoo:Bison
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Bison"^^xsd:string,
+     zoo:NumCarrots  61
+    
+    
+Individual: zoo:Boar
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Boar"^^xsd:string,
+     zoo:NumCarrots  57
+    
+    
+Individual: zoo:Buffalo
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Buffalo"^^xsd:string,
+     zoo:NumCarrots  68
+    
+    
+Individual: zoo:Butterfly
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Butterfly"^^xsd:string,
+     zoo:NumCarrots  13
+    
+    
+Individual: zoo:Camel
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Camel"^^xsd:string,
+     zoo:NumCarrots  21
+    
+    
+Individual: zoo:Capybara
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Capybara"^^xsd:string,
+     zoo:NumCarrots  40
+    
+    
+Individual: zoo:Caribou
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Caribou"^^xsd:string,
+     zoo:NumCarrots  38
+    
+    
+Individual: zoo:Cat
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Cat"^^xsd:string,
+     zoo:NumCarrots  92
+    
+    
+Individual: zoo:Caterpillar
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Caterpillar"^^xsd:string,
+     zoo:NumCarrots  39
+    
+    
+Individual: zoo:Cattle
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Cattle"^^xsd:string,
+     zoo:NumCarrots  46
+    
+    
+Individual: zoo:Chamois
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Chamois"^^xsd:string,
+     zoo:NumCarrots  36
+    
+    
+Individual: zoo:Cheetah
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Cheetah"^^xsd:string,
+     zoo:NumCarrots  23
+    
+    
+Individual: zoo:Chicken
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Chicken"^^xsd:string,
+     zoo:NumCarrots  76
+    
+    
+Individual: zoo:Chimpanzee
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Chimpanzee"^^xsd:string,
+     zoo:NumCarrots  8
+    
+    
+Individual: zoo:Chinchilla
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Chinchilla"^^xsd:string,
+     zoo:NumCarrots  69
+    
+    
+Individual: zoo:Chough
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Chough"^^xsd:string,
+     zoo:NumCarrots  35
+    
+    
+Individual: zoo:Clam
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Clam"^^xsd:string,
+     zoo:NumCarrots  83
+    
+    
+Individual: zoo:Cobra
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Cobra"^^xsd:string,
+     zoo:NumCarrots  74
+    
+    
+Individual: zoo:Cockroach
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Cockroach"^^xsd:string,
+     zoo:NumCarrots  17
+    
+    
+Individual: zoo:Cod
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Cod"^^xsd:string,
+     zoo:NumCarrots  77
+    
+    
+Individual: zoo:Cormorant
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Cormorant"^^xsd:string,
+     zoo:NumCarrots  52
+    
+    
+Individual: zoo:Coyote
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Coyote"^^xsd:string,
+     zoo:NumCarrots  31
+    
+    
+Individual: zoo:Crab
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Crab"^^xsd:string,
+     zoo:NumCarrots  14
+    
+    
+Individual: zoo:Crane
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Crane"^^xsd:string,
+     zoo:NumCarrots  40
+    
+    
+Individual: zoo:Crocodile
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Crocodile"^^xsd:string,
+     zoo:NumCarrots  46
+    
+    
+Individual: zoo:Crow
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Crow"^^xsd:string,
+     zoo:NumCarrots  99
+    
+    
+Individual: zoo:Curlew
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Curlew"^^xsd:string,
+     zoo:NumCarrots  44
+    
+    
+Individual: zoo:Deer
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Deer"^^xsd:string,
+     zoo:NumCarrots  15
+    
+    
+Individual: zoo:Dinosaur
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Dinosaur"^^xsd:string,
+     zoo:NumCarrots  89
+    
+    
+Individual: zoo:Dog
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Dog"^^xsd:string,
+     zoo:NumCarrots  36
+    
+    
+Individual: zoo:Dogfish
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Dogfish"^^xsd:string,
+     zoo:NumCarrots  98
+    
+    
+Individual: zoo:Dolphin
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Dolphin"^^xsd:string,
+     zoo:NumCarrots  20
+    
+    
+Individual: zoo:Donkey
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Donkey"^^xsd:string,
+     zoo:NumCarrots  56
+    
+    
+Individual: zoo:Dove
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Dove"^^xsd:string,
+     zoo:NumCarrots  90
+    
+    
+Individual: zoo:Dragonfly
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Dragonfly"^^xsd:string,
+     zoo:NumCarrots  5
+    
+    
+Individual: zoo:Duck
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Duck"^^xsd:string,
+     zoo:NumCarrots  75
+    
+    
+Individual: zoo:Dugong
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Dugong"^^xsd:string,
+     zoo:NumCarrots  56
+    
+    
+Individual: zoo:Eagle
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Eagle"^^xsd:string,
+     zoo:NumCarrots  23
+    
+    
+Individual: zoo:Echidna
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Echidna"^^xsd:string,
+     zoo:NumCarrots  49
+    
+    
+Individual: zoo:Eel
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Eel"^^xsd:string,
+     zoo:NumCarrots  83
+    
+    
+Individual: zoo:Elephant
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Elephant"^^xsd:string,
+     zoo:NumCarrots  55
+    
+    
+Individual: zoo:Elk
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Elk"^^xsd:string,
+     zoo:NumCarrots  22
+    
+    
+Individual: zoo:Emu
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Emu"^^xsd:string,
+     zoo:NumCarrots  7
+    
+    
+Individual: zoo:Falcon
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Falcon"^^xsd:string,
+     zoo:NumCarrots  16
+    
+    
+Individual: zoo:Ferret
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Ferret"^^xsd:string,
+     zoo:NumCarrots  91
+    
+    
+Individual: zoo:Finch
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Finch"^^xsd:string,
+     zoo:NumCarrots  80
+    
+    
+Individual: zoo:Fish
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Fish"^^xsd:string,
+     zoo:NumCarrots  21
+    
+    
+Individual: zoo:Flamingo
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Flamingo"^^xsd:string,
+     zoo:NumCarrots  56
+    
+    
+Individual: zoo:Fly
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Fly"^^xsd:string,
+     zoo:NumCarrots  10
+    
+    
+Individual: zoo:Fox
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Fox"^^xsd:string,
+     zoo:NumCarrots  28
+    
+    
+Individual: zoo:Frog
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Frog"^^xsd:string,
+     zoo:NumCarrots  29
+    
+    
+Individual: zoo:Gazelle
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Gazelle"^^xsd:string,
+     zoo:NumCarrots  19
+    
+    
+Individual: zoo:Gerbil
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Gerbil"^^xsd:string,
+     zoo:NumCarrots  73
+    
+    
+Individual: zoo:Giraffe
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Giraffe"^^xsd:string,
+     zoo:NumCarrots  45
+    
+    
+Individual: zoo:Gnat
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Gnat"^^xsd:string,
+     zoo:NumCarrots  5
+    
+    
+Individual: zoo:Goat
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Goat"^^xsd:string,
+     zoo:NumCarrots  20
+    
+    
+Individual: zoo:Goldfinch
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Goldfinch"^^xsd:string,
+     zoo:NumCarrots  28
+    
+    
+Individual: zoo:Goldfish
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Goldfish"^^xsd:string,
+     zoo:NumCarrots  45
+    
+    
+Individual: zoo:Goose
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Goose"^^xsd:string,
+     zoo:NumCarrots  39
+    
+    
+Individual: zoo:Gorilla
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Gorilla"^^xsd:string,
+     zoo:NumCarrots  64
+    
+    
+Individual: zoo:Grasshopper
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Grasshopper"^^xsd:string,
+     zoo:NumCarrots  22
+    
+    
+Individual: zoo:Gull
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Gull"^^xsd:string,
+     zoo:NumCarrots  7
+    
+    
+Individual: zoo:Hamster
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Hamster"^^xsd:string,
+     zoo:NumCarrots  30
+    
+    
+Individual: zoo:Hare
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Hare"^^xsd:string,
+     zoo:NumCarrots  10
+    
+    
+Individual: zoo:Hawk
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Hawk"^^xsd:string,
+     zoo:NumCarrots  48
+    
+    
+Individual: zoo:Hedgehog
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Hedgehog"^^xsd:string,
+     zoo:NumCarrots  60
+    
+    
+Individual: zoo:Heron
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Heron"^^xsd:string,
+     zoo:NumCarrots  73
+    
+    
+Individual: zoo:Herring
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Herring"^^xsd:string,
+     zoo:NumCarrots  82
+    
+    
+Individual: zoo:Hippopotamus
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Hippopotamus"^^xsd:string,
+     zoo:NumCarrots  96
+    
+    
+Individual: zoo:Hornet
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Hornet"^^xsd:string,
+     zoo:NumCarrots  82
+    
+    
+Individual: zoo:Horse
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Horse"^^xsd:string,
+     zoo:NumCarrots  38
+    
+    
+Individual: zoo:Hummingbird
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Hummingbird"^^xsd:string,
+     zoo:NumCarrots  84
+    
+    
+Individual: zoo:Hyena
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Hyena"^^xsd:string,
+     zoo:NumCarrots  39
+    
+    
+Individual: zoo:Jackal
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Jackal"^^xsd:string,
+     zoo:NumCarrots  12
+    
+    
+Individual: zoo:Jaguar
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Jaguar"^^xsd:string,
+     zoo:NumCarrots  75
+    
+    
+Individual: zoo:Jay
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Jay"^^xsd:string,
+     zoo:NumCarrots  75
+    
+    
+Individual: zoo:Kangaroo
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Kangaroo"^^xsd:string,
+     zoo:NumCarrots  45
+    
+    
+Individual: zoo:Koala
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Koala"^^xsd:string,
+     zoo:NumCarrots  87
+    
+    
+Individual: zoo:Lark
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Lark"^^xsd:string,
+     zoo:NumCarrots  91
+    
+    
+Individual: zoo:Lemur
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Lemur"^^xsd:string,
+     zoo:NumCarrots  33
+    
+    
+Individual: zoo:Leopard
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Leopard"^^xsd:string,
+     zoo:NumCarrots  40
+    
+    
+Individual: zoo:Lion
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Lion"^^xsd:string,
+     zoo:NumCarrots  0
+    
+    
+Individual: zoo:Llama
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Llama"^^xsd:string,
+     zoo:NumCarrots  67
+    
+    
+Individual: zoo:Lobster
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Lobster"^^xsd:string,
+     zoo:NumCarrots  63
+    
+    
+Individual: zoo:Locust
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Locust"^^xsd:string,
+     zoo:NumCarrots  16
+    
+    
+Individual: zoo:Mallard
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Mallard"^^xsd:string,
+     zoo:NumCarrots  93
+    
+    
+Individual: zoo:Manatee
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Manatee"^^xsd:string,
+     zoo:NumCarrots  19
+    
+    
+Individual: zoo:Marten
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Marten"^^xsd:string,
+     zoo:NumCarrots  72
+    
+    
+Individual: zoo:Meerkat
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Meerkat"^^xsd:string,
+     zoo:NumCarrots  46
+    
+    
+Individual: zoo:Mole
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Mole"^^xsd:string,
+     zoo:NumCarrots  73
+    
+    
+Individual: zoo:Monkey
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Monkey"^^xsd:string,
+     zoo:NumCarrots  98
+    
+    
+Individual: zoo:Moose
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Moose"^^xsd:string,
+     zoo:NumCarrots  86
+    
+    
+Individual: zoo:Mosquito
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Mosquito"^^xsd:string,
+     zoo:NumCarrots  3
+    
+    
+Individual: zoo:Mouse
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Mouse"^^xsd:string,
+     zoo:NumCarrots  64
+    
+    
+Individual: zoo:Mule
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Mule"^^xsd:string,
+     zoo:NumCarrots  94
+    
+    
+Individual: zoo:Narwhal
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Narwhal"^^xsd:string,
+     zoo:NumCarrots  75
+    
+    
+Individual: zoo:Newt
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Newt"^^xsd:string,
+     zoo:NumCarrots  2
+    
+    
+Individual: zoo:Nightingale
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Nightingale"^^xsd:string,
+     zoo:NumCarrots  87
+    
+    
+Individual: zoo:Octopus
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Octopus"^^xsd:string,
+     zoo:NumCarrots  74
+    
+    
+Individual: zoo:Opossum
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Opossum"^^xsd:string,
+     zoo:NumCarrots  79
+    
+    
+Individual: zoo:Ostrich
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Ostrich"^^xsd:string,
+     zoo:NumCarrots  56
+    
+    
+Individual: zoo:Otter
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Otter"^^xsd:string,
+     zoo:NumCarrots  51
+    
+    
+Individual: zoo:Owl
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Owl"^^xsd:string,
+     zoo:NumCarrots  77
+    
+    
+Individual: zoo:Ox
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Ox"^^xsd:string,
+     zoo:NumCarrots  81
+    
+    
+Individual: zoo:Oyster
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Oyster"^^xsd:string,
+     zoo:NumCarrots  42
+    
+    
+Individual: zoo:Panther
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Panther"^^xsd:string,
+     zoo:NumCarrots  90
+    
+    
+Individual: zoo:Parrot
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Parrot"^^xsd:string,
+     zoo:NumCarrots  96
+    
+    
+Individual: zoo:Peafowl
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Peafowl"^^xsd:string,
+     zoo:NumCarrots  4
+    
+    
+Individual: zoo:Pelican
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Pelican"^^xsd:string,
+     zoo:NumCarrots  58
+    
+    
+Individual: zoo:Penguin
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Penguin"^^xsd:string,
+     zoo:NumCarrots  73
+    
+    
+Individual: zoo:Pheasant
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Pheasant"^^xsd:string,
+     zoo:NumCarrots  27
+    
+    
+Individual: zoo:Pig
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Pig"^^xsd:string,
+     zoo:NumCarrots  56
+    
+    
+Individual: zoo:Pigeon
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Pigeon"^^xsd:string,
+     zoo:NumCarrots  80
+    
+    
+Individual: zoo:Porcupine
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Porcupine"^^xsd:string,
+     zoo:NumCarrots  10
+    
+    
+Individual: zoo:Porpoise
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Porpoise"^^xsd:string,
+     zoo:NumCarrots  35
+    
+    
+Individual: zoo:Quail
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Quail"^^xsd:string,
+     zoo:NumCarrots  86
+    
+    
+Individual: zoo:Rabbit
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Rabbit"^^xsd:string,
+     zoo:NumCarrots  100
+    
+    
+Individual: zoo:Raccoon
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Raccoon"^^xsd:string,
+     zoo:NumCarrots  16
+    
+    
+Individual: zoo:Rail
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Rail"^^xsd:string,
+     zoo:NumCarrots  7
+    
+    
+Individual: zoo:Ram
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Ram"^^xsd:string,
+     zoo:NumCarrots  30
+    
+    
+Individual: zoo:Rat
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Rat"^^xsd:string,
+     zoo:NumCarrots  84
+    
+    
+Individual: zoo:Raven
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Raven"^^xsd:string,
+     zoo:NumCarrots  50
+    
+    
+Individual: zoo:Rhinoceros
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Rhinoceros"^^xsd:string,
+     zoo:NumCarrots  86
+    
+    
+Individual: zoo:Salamander
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Salamander"^^xsd:string,
+     zoo:NumCarrots  21
+    
+    
+Individual: zoo:Salmon
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Salmon"^^xsd:string,
+     zoo:NumCarrots  15
+    
+    
+Individual: zoo:Sardine
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Sardine"^^xsd:string,
+     zoo:NumCarrots  66
+    
+    
+Individual: zoo:Scorpion
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Scorpion"^^xsd:string,
+     zoo:NumCarrots  75
+    
+    
+Individual: zoo:Seahorse
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Seahorse"^^xsd:string,
+     zoo:NumCarrots  71
+    
+    
+Individual: zoo:Seal
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Seal"^^xsd:string,
+     zoo:NumCarrots  56
+    
+    
+Individual: zoo:Shark
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Shark"^^xsd:string,
+     zoo:NumCarrots  52
+    
+    
+Individual: zoo:Sheep
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Sheep"^^xsd:string,
+     zoo:NumCarrots  99
+    
+    
+Individual: zoo:Shrew
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Shrew"^^xsd:string,
+     zoo:NumCarrots  45
+    
+    
+Individual: zoo:Shrimp
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Shrimp"^^xsd:string,
+     zoo:NumCarrots  84
+    
+    
+Individual: zoo:Skunk
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Skunk"^^xsd:string,
+     zoo:NumCarrots  99
+    
+    
+Individual: zoo:Snail
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Snail"^^xsd:string,
+     zoo:NumCarrots  51
+    
+    
+Individual: zoo:Snake
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Snake"^^xsd:string,
+     zoo:NumCarrots  37
+    
+    
+Individual: zoo:Spider
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Spider"^^xsd:string,
+     zoo:NumCarrots  96
+    
+    
+Individual: zoo:Squid
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Squid"^^xsd:string,
+     zoo:NumCarrots  90
+    
+    
+Individual: zoo:Squirrel
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Squirrel"^^xsd:string,
+     zoo:NumCarrots  92
+    
+    
+Individual: zoo:Starling
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Starling"^^xsd:string,
+     zoo:NumCarrots  80
+    
+    
+Individual: zoo:Stingray
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Stingray"^^xsd:string,
+     zoo:NumCarrots  96
+    
+    
+Individual: zoo:Stinkbug
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Stinkbug"^^xsd:string,
+     zoo:NumCarrots  31
+    
+    
+Individual: zoo:Stork
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Stork"^^xsd:string,
+     zoo:NumCarrots  39
+    
+    
+Individual: zoo:Swallow
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Swallow"^^xsd:string,
+     zoo:NumCarrots  2
+    
+    
+Individual: zoo:Swan
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Swan"^^xsd:string,
+     zoo:NumCarrots  68
+    
+    
+Individual: zoo:Tapir
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Tapir"^^xsd:string,
+     zoo:NumCarrots  53
+    
+    
+Individual: zoo:Tiger
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Tiger"^^xsd:string,
+     zoo:NumCarrots  47
+    
+    
+Individual: zoo:Toad
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Toad"^^xsd:string,
+     zoo:NumCarrots  82
+    
+    
+Individual: zoo:Trout
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Trout"^^xsd:string,
+     zoo:NumCarrots  51
+    
+    
+Individual: zoo:Turkey
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Turkey"^^xsd:string,
+     zoo:NumCarrots  57
+    
+    
+Individual: zoo:Turtle
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Turtle"^^xsd:string,
+     zoo:NumCarrots  10
+    
+    
+Individual: zoo:Viper
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Viper"^^xsd:string,
+     zoo:NumCarrots  28
+    
+    
+Individual: zoo:Vulture
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Vulture"^^xsd:string,
+     zoo:NumCarrots  91
+    
+    
+Individual: zoo:Walrus
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Walrus"^^xsd:string,
+     zoo:NumCarrots  94
+    
+    
+Individual: zoo:Wasp
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Wasp"^^xsd:string,
+     zoo:NumCarrots  51
+    
+    
+Individual: zoo:Weasel
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Weasel"^^xsd:string,
+     zoo:NumCarrots  20
+    
+    
+Individual: zoo:Whale
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Whale"^^xsd:string,
+     zoo:NumCarrots  87
+    
+    
+Individual: zoo:Wolf
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Wolf"^^xsd:string,
+     zoo:NumCarrots  81
+    
+    
+Individual: zoo:Wolverine
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Wolverine"^^xsd:string,
+     zoo:NumCarrots  36
+    
+    
+Individual: zoo:Wombat
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Wombat"^^xsd:string,
+     zoo:NumCarrots  84
+    
+    
+Individual: zoo:Woodcock
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Woodcock"^^xsd:string,
+     zoo:NumCarrots  54
+    
+    
+Individual: zoo:Woodpecker
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Woodpecker"^^xsd:string,
+     zoo:NumCarrots  7
+    
+    
+Individual: zoo:Worm
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Worm"^^xsd:string,
+     zoo:NumCarrots  42
+    
+    
+Individual: zoo:Wren
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Wren"^^xsd:string,
+     zoo:NumCarrots  55
+    
+    
+Individual: zoo:Yak
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Yak"^^xsd:string,
+     zoo:NumCarrots  60
+    
+    
+Individual: zoo:Zebra
+
+    Types: 
+        zoo:Animal
+    
+    Facts:  
+     zoo:Name  "Zebra"^^xsd:string,
+     zoo:NumCarrots  7
+    
+    
