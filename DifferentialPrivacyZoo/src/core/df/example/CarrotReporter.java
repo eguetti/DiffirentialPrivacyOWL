@@ -6,8 +6,13 @@ public class CarrotReporter {
 	
 	private static final String msg_not_enough = "Not enough privacy budget";
 	
+	private String dataFilename;
+	private double epsilon;
+	
+	
 	public CarrotReporter(String dataFilename, double epsilon) {
-		
+		this.dataFilename = dataFilename;
+		this.epsilon = epsilon;
 	}
 	
 	public int sum() {
@@ -27,23 +32,23 @@ public class CarrotReporter {
 	}
 	
 	int privateSum(double privacy_budget){
-		if (privacy_budget < this.privacyBudget) {
+		if (privacy_budget < this.getPrivacyBudget()) {
 			System.out.println(msg_not_enough);
 			return 0; 
 		}
 		return 0;
 	}
 	
-	double privateMean(double privacy_budget) {
-		if (privacy_budget < this.privacyBudget) {
+	MeanStatus privateMean(double privacy_budget) {
+		if (privacy_budget < this.getPrivacyBudget()) {
 			System.out.println(msg_not_enough);
-			return 0; 
+			return new MeanStatus(); 
 		}
-		return 0;
+		return new MeanStatus();
 	} 
 	
 	int privateCountAbove(double privacy_budget, int limit){
-		if (privacy_budget < this.privacyBudget) {
+		if (privacy_budget < this.getPrivacyBudget()) {
 			System.out.println(msg_not_enough);
 			return 0; 
 		}
@@ -51,7 +56,7 @@ public class CarrotReporter {
 	}
 	
 	int privateMax(double privacy_budget){
-		if (privacy_budget < this.privacyBudget) {
+		if (privacy_budget < this.getPrivacyBudget()) {
 			System.out.println(msg_not_enough);
 			return 0; 
 		}
