@@ -1,0 +1,1930 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#"
+     xml:base="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:zoo="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#"
+     xmlns:obda="https://w3id.org/obda/vocabulary#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#int -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#int"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#integer -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#integer"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#string -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#NumCarrots -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#NumCarrots">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Aardvark -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Aardvark">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aardvark</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Albatross -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Albatross">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Albatross</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">88</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Alligator -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Alligator">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alligator</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Alpaca -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Alpaca">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alpaca</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">99</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Ant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Ant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ant</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">69</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Anteater -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Anteater">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anteater</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Antelope -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Antelope">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Antelope</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">77</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Ape -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Ape">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ape</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">53</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Armadillo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Armadillo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Armadillo</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">94</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Baboon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Baboon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baboon</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">67</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Badger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Badger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Badger</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">92</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Barracuda -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Barracuda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Barracuda</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">87</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Bat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Bat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bat</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Bear -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Bear">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bear</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Beaver -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Beaver">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beaver</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Bee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Bee">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bee</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Bison -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Bison">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bison</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">61</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Boar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Boar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Boar</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">57</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Buffalo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Buffalo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Buffalo</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">68</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Butterfly -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Butterfly">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Butterfly</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Camel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Camel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Camel</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Capybara -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Capybara">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Capybara</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Caribou -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Caribou">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caribou</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Cat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Cat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cat</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">92</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Caterpillar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Caterpillar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caterpillar</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">39</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Cattle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Cattle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cattle</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">46</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Chamois -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Chamois">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chamois</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">36</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Cheetah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Cheetah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cheetah</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Chicken -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Chicken">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chicken</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">76</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Chimpanzee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Chimpanzee">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chimpanzee</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Chinchilla -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Chinchilla">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chinchilla</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">69</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Chough -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Chough">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chough</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Clam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Clam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clam</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">83</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Cobra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Cobra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cobra</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">74</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Cockroach -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Cockroach">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cockroach</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Cod -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Cod">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cod</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">77</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Cormorant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Cormorant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cormorant</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">52</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Coyote -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Coyote">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coyote</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Crab -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Crab">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crab</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Crane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Crane">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crane</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Crocodile -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Crocodile">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crocodile</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">46</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Crow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Crow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crow</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">99</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Curlew -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Curlew">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Curlew</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Deer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Deer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deer</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Dinosaur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Dinosaur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dinosaur</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">89</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Dog -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Dog">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dog</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">36</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Dogfish -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Dogfish">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dogfish</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">98</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Dolphin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Dolphin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dolphin</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Donkey -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Donkey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Donkey</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Dove -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Dove">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dove</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Dragonfly -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Dragonfly">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dragonfly</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Duck -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Duck">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Duck</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Dugong -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Dugong">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dugong</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Eagle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Eagle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eagle</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Echidna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Echidna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Echidna</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">49</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Eel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Eel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eel</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">83</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Elephant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Elephant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elephant</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Elk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Elk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elk</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Emu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Emu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emu</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Falcon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Falcon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Falcon</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Ferret -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Ferret">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ferret</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">91</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Finch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Finch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Finch</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Fish -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Fish">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fish</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Flamingo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Flamingo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flamingo</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Fly -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Fly">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fly</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Fox -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Fox">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fox</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Frog -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Frog">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frog</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Gazelle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Gazelle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gazelle</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Gerbil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Gerbil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gerbil</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">73</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Giraffe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Giraffe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giraffe</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Gnat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Gnat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gnat</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Goat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Goat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Goat</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Goldfinch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Goldfinch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Goldfinch</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Goldfish -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Goldfish">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Goldfish</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Goose -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Goose">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Goose</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">39</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Gorilla -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Gorilla">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gorilla</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Grasshopper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Grasshopper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grasshopper</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Gull -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Gull">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gull</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Hamster -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Hamster">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hamster</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Hare -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Hare">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hare</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Hawk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Hawk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hawk</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">48</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Hedgehog -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Hedgehog">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hedgehog</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Heron -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Heron">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Heron</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">73</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Herring -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Herring">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Herring</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">82</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Hippopotamus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Hippopotamus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hippopotamus</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">96</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Hornet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Hornet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hornet</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">82</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Horse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Horse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Horse</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Hummingbird -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Hummingbird">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hummingbird</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">84</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Hyena -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Hyena">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hyena</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">39</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Jackal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Jackal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jackal</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Jaguar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Jaguar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jaguar</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Jay -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Jay">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jay</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Kangaroo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Kangaroo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kangaroo</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Koala -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Koala">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Koala</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">87</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Lark -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Lark">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lark</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">91</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Lemur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Lemur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lemur</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Leopard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Leopard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leopard</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Lion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Lion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lion</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Llama -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Llama">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Llama</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">67</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Lobster -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Lobster">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lobster</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">63</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Locust -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Locust">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Locust</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Mallard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Mallard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mallard</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">93</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Manatee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Manatee">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manatee</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Marten -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Marten">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marten</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">72</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Meerkat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Meerkat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Meerkat</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">46</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Mole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Mole">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mole</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">73</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Monkey -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Monkey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monkey</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">98</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Moose -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Moose">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Moose</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">86</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Mosquito -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Mosquito">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mosquito</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Mouse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Mouse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mouse</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Mule -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Mule">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mule</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">94</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Narwhal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Narwhal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Narwhal</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Newt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Newt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Newt</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Nightingale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Nightingale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nightingale</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">87</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Octopus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Octopus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Octopus</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">74</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Opossum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Opossum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Opossum</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">79</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Ostrich -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Ostrich">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ostrich</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Otter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Otter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Otter</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">51</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Owl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Owl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Owl</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">77</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Ox -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Ox">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ox</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">81</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Oyster -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Oyster">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oyster</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">42</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Panther -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Panther">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Panther</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Parrot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Parrot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parrot</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">96</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Peafowl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Peafowl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peafowl</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Pelican -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Pelican">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pelican</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">58</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Penguin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Penguin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Penguin</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">73</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Pheasant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Pheasant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pheasant</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Pig -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Pig">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pig</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Pigeon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Pigeon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pigeon</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Porcupine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Porcupine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porcupine</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Porpoise -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Porpoise">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porpoise</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Quail -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Quail">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quail</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">86</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Rabbit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Rabbit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rabbit</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Raccoon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Raccoon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Raccoon</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Rail -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Rail">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rail</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Ram -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Ram">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ram</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Rat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Rat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rat</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">84</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Raven -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Raven">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Raven</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Rhinoceros -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Rhinoceros">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rhinoceros</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">86</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Salamander -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Salamander">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salamander</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Salmon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Salmon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salmon</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Sardine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Sardine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sardine</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">66</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Scorpion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Scorpion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scorpion</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Seahorse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Seahorse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Seahorse</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">71</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Seal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Seal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Seal</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Shark -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Shark">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shark</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">52</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Sheep -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Sheep">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sheep</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">99</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Shrew -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Shrew">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shrew</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Shrimp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Shrimp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shrimp</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">84</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Skunk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Skunk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Skunk</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">99</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Snail -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Snail">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snail</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">51</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Snake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Snake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snake</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">37</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Spider -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Spider">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spider</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">96</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Squid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Squid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Squid</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Squirrel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Squirrel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Squirrel</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">92</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Starling -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Starling">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Starling</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Stingray -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Stingray">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stingray</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">96</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Stinkbug -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Stinkbug">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stinkbug</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Stork -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Stork">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stork</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">39</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Swallow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Swallow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Swallow</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Swan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Swan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Swan</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">68</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Tapir -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Tapir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tapir</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">53</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Tiger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Tiger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tiger</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">47</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Toad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Toad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Toad</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">82</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Trout -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Trout">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trout</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">51</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Turkey -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Turkey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Turkey</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">57</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Turtle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Turtle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Turtle</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Viper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Viper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Viper</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Vulture -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Vulture">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vulture</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">91</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Walrus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Walrus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Walrus</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">94</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Wasp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Wasp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wasp</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">51</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Weasel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Weasel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Weasel</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Whale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Whale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Whale</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">87</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Wolf -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Wolf">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wolf</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">81</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Wolverine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Wolverine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wolverine</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">36</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Wombat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Wombat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wombat</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">84</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Woodcock -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Woodcock">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Woodcock</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Woodpecker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Woodpecker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Woodpecker</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Worm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Worm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Worm</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">42</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Wren -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Wren">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wren</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Yak -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Yak">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yak</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</NumCarrots>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Zebra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Zebra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/erika/ontologies/2019/11/zoo-ontology#Animal"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zebra</Name>
+        <NumCarrots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</NumCarrots>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
