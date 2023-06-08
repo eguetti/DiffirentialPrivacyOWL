@@ -1,0 +1,447 @@
+
+Python iri
+http://www.semanticweb.org/root/ontologies/2021/0/MenstrualCycleTracking#
+
+
+Sparql Protegé
+
+PREFIX mens:<http://www.semanticweb.org/erika/ontologies/menstrual_cycle#>
+
+
+		#?r  mens:hasSymptom ?m. 
+		#?m owl:someValuesFrom mens:Acne.
+		
+		
+
+--------------------------------------------------------
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX e:   <http://purl.org/dc/elements/1.1/>
+	
+PREFIX mens:<http://www.semanticweb.org/erika/ontologies/menstrual_cycle#>
+
+
+SELECT (COUNT(?subject) AS ?users) 
+	WHERE {		
+	?subject  rdf:type mens:User.
+	
+}
+
+
+-------------------TEST1----------------
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX mens:<http://www.semanticweb.org/erika/ontologies/menstrual_cycle#>
+
+SELECT ?userAcne ?equivalentClass
+	WHERE { 
+		#?userAcne rdfs:subClassOf mens:User.
+		#?userAcne owl:equivalentClass ?object .
+		#?object rdfs:subClassOf mens:User.
+		#?userAcne rdf:type mens:User.
+		?userAcne owl:intersectionOf ?list.
+		?list rdf:rest*/rdf:first ?equivalentClass .
+
+	}
+-------------------User wiith Acne----------------
+User with Acne
+
+--------------------
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX mens:<http://www.semanticweb.org/erika/ontologies/menstrual_cycle#>
+
+#SELECT ?userAcne 
+SELECT  (count(distinct ?userAcne) as ?users_with_acne)
+	WHERE { 
+
+		?userAcne rdf:type ?user. 
+		?user owl:intersectionOf ?list.
+		?list rdf:rest*/rdf:first ?equivalentClass .
+		?equivalentClass rdf:type owl:Restriction .
+		?equivalentClass owl:onProperty mens:hasSymptom .
+		?equivalentClass owl:someValuesFrom mens:Acne .
+		
+	}
+	
+-------------------user_with_migraine----------------		
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX mens:<http://www.semanticweb.org/erika/ontologies/menstrual_cycle#>
+
+#SELECT ?userAcne 
+SELECT  (count(distinct ?userMigraine) as ?users_with_migraine)
+	WHERE { 
+
+		?userMigraine rdf:type ?user. 
+		?user owl:intersectionOf ?list.
+		?list rdf:rest*/rdf:first ?equivalentClass .
+		?equivalentClass rdf:type owl:Restriction .
+		?equivalentClass owl:onProperty mens:hasSymptom .
+		?equivalentClass owl:someValuesFrom mens:Migraine .
+		
+	}
+		
+-------------------user_with_Insomnia----------------		
+		
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX mens:<http://www.semanticweb.org/erika/ontologies/menstrual_cycle#>
+
+#SELECT ?userAcne 
+SELECT  (count(distinct ?userInsomnia) as ?users_with_insomnia)
+	WHERE { 
+
+		?userInsomnia rdf:type ?user. 
+		?user owl:intersectionOf ?list.
+		?list rdf:rest*/rdf:first ?equivalentClass .
+		?equivalentClass rdf:type owl:Restriction .
+		?equivalentClass owl:onProperty mens:hasSymptom .
+		?equivalentClass owl:someValuesFrom mens:Insomnia .
+		
+	}
+	
+
+Query DL
+--------------------------------------------
+User and hasSymptom some Acne
+
+
+Equivalent 
+Instances
+--------------------------------------------------
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX e:   <http://purl.org/dc/elements/1.1/>
+PREFIX mens:<http://www.semanticweb.org/erika/ontologies/menstrual_cycle#>
+SELECT (COUNT(?ind) AS ?users)  
+	WHERE {
+		?ind rdf:type ?type .
+		OPTIONAL { ?type rdfs:subClassOf  mens:User .}
+		
+		#OPTIONAL { ?ind rdfs:label  ?name.}
+} #ORDER BY ?class
+
+
+
+
+
+
+
+
+---------------
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX e:   <http://purl.org/dc/elements/1.1/>
+	
+PREFIX mens:<http://www.semanticweb.org/erika/ontologies/menstrual_cycle#>
+
+
+SELECT ?ind 
+	WHERE {
+		?ind rdf:type ?type .
+		OPTIONAL { ?type rdfs:subClassOf  mens:User .}
+
+} #ORDER BY ?class
+
+----------------------------------------------------------
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX e:   <http://purl.org/dc/elements/1.1/>
+	
+PREFIX mens:<http://www.semanticweb.org/erika/ontologies/menstrual_cycle#>
+
+
+SELECT (COUNT(?symptom) AS ?userWithMigraine) 
+	WHERE {
+		?s  mens:hasDiagnosisSymptom   ?r.
+		?r  mens:hasSymptom ?symptom .
+		?symptom owl:someValuesFrom  mens:Migraine.	
+}
+------------------------------------------
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX e:   <http://purl.org/dc/elements/1.1/>
+	
+PREFIX mens:<http://www.semanticweb.org/erika/ontologies/menstrual_cycle#>
+
+
+SELECT (COUNT(?m) AS ?userWithMigraine) 
+	WHERE {
+		?s  mens:DiagnosisSymptom   ?r.
+		?r  mens:hasSymptom ?m. 
+		?m owl:someValuesFrom mens:Migraine.
+	
+}	
+--------------------------------------------------
+"0"^^<http://www.w3.org/2001/XMLSchema#integer>
+	
+
+--------------------------------------------------
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX e:   <http://purl.org/dc/elements/1.1/>
+	
+PREFIX mens:<http://www.semanticweb.org/erika/ontologies/menstrual_cycle#>
+
+
+SELECT (COUNT(?s) AS ?userWithMigraine) 
+	WHERE {
+		?s  ?p   ?o.
+		?o owl:someValuesFrom mens:Insomnia.
+	
+	}	
+	
+-------------------------------------
+"2"^^<http://www.w3.org/2001/XMLSchema#integer>
+	
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX e:   <http://purl.org/dc/elements/1.1/>
+
+SELECT  ?s  ?p ?o
+WHERE { 
+	?s e:date ?date;
+	     ?p ?o . 
+	  #FILTER (?date >= "2020-09-12T13:20:00-05:00"^^xsd:dateTime) 	
+}
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX mens:<http://www.semanticweb.org/erika/ontologies/menstrual_cycle>
+
+SELECT ?x ?y
+WHERE { ?x  :hasSymptomDate   ?y.}
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX mens:<http://www.semanticweb.org/erika/ontologies/menstrual_cycle>
+
+SELECT ?x ?y
+WHERE { ?x  mens:hasSymtomValue   ?y.}
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX mens:<http://www.semanticweb.org/erika/ontologies/menstrual_cycle>
+
+SELECT ?x ?y
+WHERE { ?x  mens:hasSymtomValue   ?y.}
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?subject ?object
+	WHERE { ?subject rdfs:subClassOf ?object }
+	
+	
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX e:   <http://purl.org/dc/elements/1.1/>
+PREFIX mens:<http://www.semanticweb.org/erika/ontologies/menstrual_cycle>
+
+SELECT ?s ?p ?o
+	WHERE { ?s ?p ?o}	
+	
+	
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?individual ?class ?label
+WHERE { 
+    ?individual rdf:type owl:NamedIndividual .
+    ?class rdf:type owl:Class .
+    FILTER(?label="_eva")
+}
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?individual ?class ?label
+WHERE { 
+    ?individual rdf:type owl:NamedIndividual .
+    ?class rdf:type owl:Class .
+
+    ?individual rdfs:label "eva" 
+}
+
+QUERY DL
+----------------------
+
+User and  hasSymptomValue some Migraine
+
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix mens: <http://www.semanticweb.org/erika/ontologies/menstrual_cycle>
+
+SELECT  (count( distinct ?subject) as ?users)
+	WHERE { 
+	  ?subject a owl:Class . 
+	
+}
+
+71
+
+SELECT   distinct ?subject
+	WHERE { 
+	  ?subject a owl:Class . 
+	
+}
+------------------------------------
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix mens: <http://www.semanticweb.org/erika/ontologies/menstrual_cycle>
+
+SELECT distinct  ?subject  ?user
+	WHERE { 
+	#?subject owl:intersectionOf  ?user. 
+	?user a owl:Class .
+}
+--------------------
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?subject ?object
+	WHERE { ?subject rdfs:subClassOf ?object }
+	
+	
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?subject  ?user
+	WHERE { 
+	?subject owl:intersectionOf  ?user. 
+	?user 	 rdf:type owl:class .
+}
+	
+	
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+PREFIX mens: <http://www.semanticweb.org/erika/ontologies/menstrual_cycle#>
+#PREFIX : <http://www.semanticweb.org/erika/ontologies/menstrual_cycle/User#>
+
+SELECT (count( ?subject) as ?users  )  	WHERE { 
+	?subject owl:intersectionOf  ?user. 
+ 	#?user  rdf:type owl:class .
+	}
+ORDER by ?subject
+	
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SElect ?x (STR(?lab) as ?label ) where {
+	?x rdf:type owl:class .
+	Optional {?x rdfs:label ?lab}
+}		
+ORDER by ?labePREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX mens: <http://www.semanticweb.org/erika/ontologies/menstrual_cycle#>
+#PREFIX : <http://www.semanticweb.org/erika/ontologies/menstrual_cycle/User#>
+
+SELECT  ?subject  ?user
+	WHERE { 
+	?subject owl:intersectionOf  ?user. 
+
+#	optional {	?user  rdf:type owl:class }
+}l
+
+
+________________________
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX mens: <http://www.semanticweb.org/erika/ontologies/menstrual_cycle#>
+#PREFIX : <http://www.semanticweb.org/erika/ontologies/menstrual_cycle/User#>
+
+SELECT  (count( ?subject) as ?users  ) 
+	WHERE { 
+	?subject owl:intersectionOf  ?user. 
+	#?user 	 rdf:type owl:class .
+}
+
+
+-----------------------------
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?subject  ?user
+	WHERE { 
+	?subject owl:intersectionOf  ?user. 
+	optional  {?user rdf:type owl:class .}
+}
+
+
+
+SELECT ?s ?p ?o
+	WHERE {
+		?s owl:intersectionOf  ?o.
+	
+	}	
+	
+	
+			
