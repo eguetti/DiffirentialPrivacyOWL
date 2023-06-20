@@ -1,5 +1,7 @@
 # DiffirentialPrivacyOWL
-DiffirentialPrivacyOWL my first example
+DiffirentialPrivacyOWL my doctorate project: 
+
+Study case:  Menstrual Cycle Tracking
 
 Tutorias de Differential privacy
 -----------------------------------------
